@@ -24,6 +24,18 @@ export default define.page(function Home(ctx) {
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
         <Counter count={count} />
+        <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+          <h2 class="text-xl font-semibold mb-2">Demo: Optional Catch-All Routes</h2>
+          <p class="mb-3 text-sm">
+            Xem ví dụ về dynamic routes tương tự <code>[[...slugs]]</code> trong Next.js:
+          </p>
+          <a
+            href="/docs"
+            class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+          >
+            Xem Demo /docs
+          </a>
+        </div>
       </div>
     </div>
   );
