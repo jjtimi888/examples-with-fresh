@@ -82,12 +82,12 @@ export function DocsPage(props: { path: string[] }) {
 }
 
 // Handler cho base path /docs
-export default define.page<typeof handler>(function DocsIndexPage(props) {
-  return <DocsPage path={[]} />;
-});
-
 export const handler = define.handlers({
   GET(ctx) {
     return ctx.render();
   },
+});
+
+export default define.page<typeof handler>(function DocsIndexPage(props) {
+  return <DocsPage path={[]} />;
 });
