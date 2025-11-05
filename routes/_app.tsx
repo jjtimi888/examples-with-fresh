@@ -10,7 +10,10 @@ export default define.page(function App({ Component, state }) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <Component />
+        <main role="main">
+          <Component />
+        </main>
+        <footer>Demo</footer>
       </body>
     </html>
   );
